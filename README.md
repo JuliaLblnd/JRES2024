@@ -22,7 +22,7 @@ Le script utilise les API de VMware avec PowerCLI en PowerShell.
 4. C'est pas si simple : les difficultés rencontrées
 5. Conclusion
 
-## Script
+## Scripte
 
 ### Slide 1 : Titre
 
@@ -51,6 +51,16 @@ C’est super mais lorsque vous avez plusieurs centaines de VM, que chaque VM à
 Et est-ce qu'on n'en ferait pas un script ?
 
 ### Slide 4 : Un script !
+
+Pour se faire, on peut utiliser les API de VMware via PowerCLI sur PowerShell.
+
+Dans l'idée, pour chaque périphérique de la VM, que ce soit une carte réseau ou un disque, on va :  
+Récupérer la ressource de rattachement : un portGroup pour une carte réseau, un datastore pour un disque ;  
+Ensuite on va trouver la ressource de rattachement sur la destination ;  
+On définit la spécification de relocalisation de la VM avec les éléments de rattachement que l'on a trouvé ;  
+Et on peut exécuter la tâche de relocalisation.
+
+Ça à l'aire simple hein comme ça non ?
 
 ### Slide 5 : C’est pas si simple
 
