@@ -67,7 +67,7 @@ Et on peut exécuter la tâche de relocalisation.
 Bon évidement c'est pas aussi simple. Le script, vous le voyer défiler à l'écran, il fait plus de 200 lignes, alors il y eu quelques difficultés.
 
 Par exemple, en cherchant un portGroup par nom, j'obtenais plusieurs résultats. Et effectivement on a plusieurs portGroup qui ont le même nom, mais qui sont sûr de VDSwitch différents pour des clusters différents. Il faut se débrouiller pour trouver le bon !  
-Après, si jamais un jour il vous vient l’idée saugrenue de récupérer la thumbprint d’un certificat SSL d’une appli web, ne le faite pas. Vraiment !  
+Après, si jamais un jour il vous vient l’idée saugrenue de récupérer la thumbprint d’un certificat SSL d’une appli web en PowerShell, ne le faite pas. Vraiment !  
 Pour les disques, il faut fournir ses différents paramètres. Et les paramètres ils sont différents selon le type du disque. Donc il faut lire la doc pour chaque type.  
 Évidemment, il ne faut pas juste fournir le nom de la ressource pour la destination, il faut fournir sa référence d’objet managé par le vCenter. Donc encore un truc à faire.  
 Et puis, j’avoue, je me suis encore un peu perdu dans la doc des API VMware, à trouver des objets avec des noms de class plus long que les temps d’attentes de la MDPH. J’ai presque l’impression de faire du Java !
